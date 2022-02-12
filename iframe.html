@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div id="title" class="container mt-3">
+        <p class="text-center">
+          Herzlich willkommen. <br />
+          hier können Sie den -------------------- abonnieren. <br />
+          einfach das formular ausfüllen und abschicken. <br />
+          <br />
+          Sie erhalten fortan regelmäßig und für Sie kostenlos: <br />
+          zur Jahreszeit passende Gesundheit-Tipps, wissenswertes über
+          heilpflanzen, gut aufbereitete medizinische Hintergründe, <br />
+          nachhaltige Themen und aktuelle Meldungen aus dem Hause -----.
+          <br /><br />
+          Die mit * gekennzeichneten Felder müssen ausgefüllt werden. <br />
+          Hier finden Sie Informationen zu unserer
+          <span style="color: crimson">Datenschutzerklärung</span>.
+        </p>
+      </div>
+      <form id="formValidation" class="row g-3">
+        <div class="col-md-12">
+          <label for="gender" class="form-label">Anrede</label>
+          <select
+            name="gender"
+            class="form-select"
+            id="gender"
+            aria-label="Default select example"
+          >
+            <option selected>-</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+        <div class="col-md-6">
+          <input
+            type="text"
+            class="form-control"
+            name="firstName"
+            id="usernames"
+            placeholder="Vorname"
+          />
+        </div>
+        <div class="col-md-6">
+          <input
+            type="text"
+            class="form-control"
+            id="lastName"
+            placeholder="Nachname"
+          />
+        </div>
+        <div class="col-md-12">
+          <input
+            type="email"
+            class="form-control"
+            id="email"
+            class="email"
+            placeholder="E-Mail*"
+          />
+          <p class="emailError1 hidden bg-danger p-2 text-light mt-1">
+            Bitte geben Sie eine gültige E-Mail Adresse an
+          </p>
+          <p class="emailError2 hidden bg-danger p-2 text-light mt-1">
+            Dieses Feld ist ein Pflichtfeld.
+          </p>
+        </div>
+        <!-- text -->
+        <div class="container mt-5">
+          <p class="text-center">
+            Widderruf:<br />
+            Sie können lhre Einwilligung jederzeit mit Wirkung für diet Zukunft
+            bei der ------------------------------------<br />
+            Boll, <span style="color: crimson">Datenschutzerklärung</span> ohne
+            Angabe von Gründen widerrufen. Weiterhin finden Sie hierfür in jedem
+            Newsletter einen<br />
+            Abmeldelink. <br />
+            <br />
+          </p>
+        </div>
+        <!-- button -->
+        <div class="col-md-12">
+          <input
+            type="submit"
+            id="submitbtn"
+            value="Senden"
+            class="btn btn-danger"
+          />
+        </div>
+      </form>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
